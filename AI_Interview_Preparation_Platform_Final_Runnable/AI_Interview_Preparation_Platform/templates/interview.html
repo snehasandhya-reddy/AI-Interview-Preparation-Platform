@@ -1,0 +1,29 @@
+
+{% extends "base.html" %}
+{% block title %}Interview Session{% endblock %}
+{% block content %}
+<div class="interview-head">
+  <div><span class="eyebrow">{{ setup.role }} · {{ setup.difficulty }} · {{ setup.interview_type }}</span>
+  <h1>Mock Interview</h1></div>
+  <div class="progress-box"><span id="counter">Question 1 of {{ setup.questions|length }}</span><i><em id="progressBar" style="width:0%"></em></i></div>
+</div>
+<section class="interview-card">
+  <div class="question-meta"><span id="qCategory">INTERVIEW QUESTION</span><span id="timer">00:00</span></div>
+  <h2 id="questionText"></h2>
+  <div class="answer-area">
+    <textarea id="answer" placeholder="Type your answer here, or use Start Voice..."></textarea>
+    <div class="voice-row">
+      <button id="voiceBtn" class="btn voice">🎙 Start Voice</button>
+      <span id="voiceStatus" class="muted">Voice input works best in Chrome/Edge.</span>
+    </div>
+  </div>
+  <div class="interview-actions">
+    <button id="submitBtn" class="btn primary">Evaluate Answer →</button>
+  </div>
+  <div id="feedbackBox" class="feedback-box hidden"></div>
+</section>
+<script>
+window.INTERVIEW_DATA = {{ setup.questions|tojson }};
+</script>
+<script src="{{ url_for('static', filename='js/interview.js') }}"></script>
+{% endblock %}

@@ -1,0 +1,149 @@
+[
+  {
+    "id": "python-1",
+    "role": "Python Developer",
+    "difficulty": "Beginner",
+    "type": "Technical",
+    "question": "What is Python and why is it popular for software development?"
+  },
+  {
+    "id": "python-2",
+    "role": "Python Developer",
+    "difficulty": "Beginner",
+    "type": "Technical",
+    "question": "Explain the difference between a list and a tuple in Python."
+  },
+  {
+    "id": "python-3",
+    "role": "Python Developer",
+    "difficulty": "Beginner",
+    "type": "Technical",
+    "question": "What is a function in Python? Give a practical example."
+  },
+  {
+    "id": "python-4",
+    "role": "Python Developer",
+    "difficulty": "Intermediate",
+    "type": "Technical",
+    "question": "Explain exception handling in Python and why it is useful."
+  },
+  {
+    "id": "python-5",
+    "role": "Python Developer",
+    "difficulty": "Intermediate",
+    "type": "Technical",
+    "question": "Explain object-oriented programming concepts in Python."
+  },
+  {
+    "id": "python-6",
+    "role": "Python Developer",
+    "difficulty": "Advanced",
+    "type": "Technical",
+    "question": "How would you design a Python API service for a production application?"
+  },
+  {
+    "id": "data-1",
+    "role": "Data Analyst",
+    "difficulty": "Beginner",
+    "type": "Technical",
+    "question": "What is data cleaning and why is it important?"
+  },
+  {
+    "id": "data-2",
+    "role": "Data Analyst",
+    "difficulty": "Beginner",
+    "type": "Technical",
+    "question": "What is the difference between mean and median?"
+  },
+  {
+    "id": "data-3",
+    "role": "Data Analyst",
+    "difficulty": "Intermediate",
+    "type": "Technical",
+    "question": "Explain SQL JOINs with an example."
+  },
+  {
+    "id": "data-4",
+    "role": "Data Analyst",
+    "difficulty": "Intermediate",
+    "type": "Technical",
+    "question": "How would you handle missing values in a dataset?"
+  },
+  {
+    "id": "data-5",
+    "role": "Data Analyst",
+    "difficulty": "Advanced",
+    "type": "Technical",
+    "question": "How would you evaluate whether a dashboard is useful for business decision making?"
+  },
+  {
+    "id": "ai-1",
+    "role": "AI/ML Engineer",
+    "difficulty": "Beginner",
+    "type": "Technical",
+    "question": "What is machine learning and how is it different from traditional programming?"
+  },
+  {
+    "id": "ai-2",
+    "role": "AI/ML Engineer",
+    "difficulty": "Beginner",
+    "type": "Technical",
+    "question": "What are training data and test data?"
+  },
+  {
+    "id": "ai-3",
+    "role": "AI/ML Engineer",
+    "difficulty": "Intermediate",
+    "type": "Technical",
+    "question": "Explain overfitting and how you would reduce it."
+  },
+  {
+    "id": "ai-4",
+    "role": "AI/ML Engineer",
+    "difficulty": "Intermediate",
+    "type": "Technical",
+    "question": "What is an embedding in natural language processing?"
+  },
+  {
+    "id": "ai-5",
+    "role": "AI/ML Engineer",
+    "difficulty": "Advanced",
+    "type": "Technical",
+    "question": "Explain how you would evaluate an NLP model using precision, recall and F1-score."
+  },
+  {
+    "id": "hr-1",
+    "role": "Python Developer",
+    "difficulty": "Beginner",
+    "type": "HR",
+    "question": "Tell me about yourself and why you are interested in this role."
+  },
+  {
+    "id": "hr-2",
+    "role": "Python Developer",
+    "difficulty": "Intermediate",
+    "type": "HR",
+    "question": "Describe a difficult project or problem you faced and how you solved it."
+  },
+  {
+    "id": "hr-3",
+    "role": "Data Analyst",
+    "difficulty": "Beginner",
+    "type": "HR",
+    "question": "Why do you want to start your career as a data analyst?"
+  },
+  {
+    "id": "hr-4",
+    "role": "AI/ML Engineer",
+    "difficulty": "Intermediate",
+    "type": "HR",
+    "question": "Tell me about a time you learned a difficult technical concept quickly."
+  },
+  {
+    "id": "hr-5",
+    "role": "AI/ML Engineer",
+    "difficulty": "Advanced",
+    "type": "HR",
+    "question": "Describe a situation where your first technical approach failed. What did you do next?"
+  }
+]

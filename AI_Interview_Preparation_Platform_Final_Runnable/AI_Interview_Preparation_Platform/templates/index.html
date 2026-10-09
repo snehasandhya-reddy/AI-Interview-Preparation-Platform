@@ -1,0 +1,33 @@
+
+{% extends "base.html" %}
+{% block title %}InterviewAI - Home{% endblock %}
+{% block content %}
+<section class="hero">
+  <div>
+    <span class="eyebrow">AI + NLP + Speech Processing</span>
+    <h1>Practice interviews.<br><span>Measure your progress.</span></h1>
+    <p>A structured mock-interview platform for students and freshers. Select a role, answer questions by text or voice, receive automated evaluation, and track your improvement.</p>
+    <div class="actions">
+      <a class="btn primary" href="{{ url_for('register') }}">Start Practicing</a>
+      <a class="btn secondary" href="{{ url_for('login') }}">I already have an account</a>
+    </div>
+  </div>
+  <div class="hero-card">
+    <div class="mini-label">Sample evaluation</div>
+    <div class="score">82<span>/100</span></div>
+    <div class="meter"><i style="width:82%"></i></div>
+    <div class="mini-grid">
+      <div><b>88</b><small>Technical</small></div>
+      <div><b>80</b><small>Relevance</small></div>
+      <div><b>78</b><small>Clarity</small></div>
+    </div>
+    <p class="success-text">✓ Strengths and improvement suggestions generated</p>
+  </div>
+</section>
+<section class="features">
+  <div class="feature"><b>01</b><h3>Role-based</h3><p>Python, Data Analytics and AI/ML interview tracks.</p></div>
+  <div class="feature"><b>02</b><h3>Voice + Text</h3><p>Answer by typing or use browser speech recognition.</p></div>
+  <div class="feature"><b>03</b><h3>NLP Evaluation</h3><p>Relevance, concepts, completeness and clarity are scored.</p></div>
+  <div class="feature"><b>04</b><h3>Progress</h3><p>Save attempts and compare your performance over time.</p></div>
+</section>
+{% endblock %}

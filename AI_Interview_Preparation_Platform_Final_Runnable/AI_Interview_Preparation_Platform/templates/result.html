@@ -1,0 +1,32 @@
+
+{% extends "base.html" %}
+{% block title %}Interview Result{% endblock %}
+{% block content %}
+<div class="page-head">
+  <div><span class="eyebrow">Completed interview</span><h1>{{ interview["role"] }} — Results</h1><p>{{ interview["difficulty"] }} · {{ interview["interview_type"] }}</p></div>
+  <a class="btn secondary" href="{{ url_for('setup') }}">Practice Again</a>
+</div>
+<div class="result-hero">
+  <div><span>Overall Score</span><strong>{{ "%.1f"|format(interview["overall_score"]) }}</strong><small>/100</small></div>
+  <p>Use the detailed feedback below to improve your next attempt.</p>
+</div>
+{% for r in responses %}
+<section class="panel result-card">
+  <div class="question-label">Question {{ loop.index }}</div>
+  <h2>{{ r["question"] }}</h2>
+  <div class="answer-box"><b>Your answer</b><p>{{ r["answer"] }}</p></div>
+  <div class="score-grid">
+    <div><span>Technical</span><b>{{ "%.0f"|format(r["technical"]) }}</b></div>
+    <div><span>Relevance</span><b>{{ "%.0f"|format(r["relevance"]) }}</b></div>
+    <div><span>Completeness</span><b>{{ "%.0f"|format(r["completeness"]) }}</b></div>
+    <div><span>Clarity</span><b>{{ "%.0f"|format(r["clarity"]) }}</b></div>
+    <div><span>Overall</span><b>{{ "%.0f"|format(r["overall"]) }}</b></div>
+  </div>
+  <div class="feedback-columns">
+    <div><h3>Strengths</h3><p>{{ r["strengths"] }}</p></div>
+    <div><h3>Needs improvement</h3><p>{{ r["weaknesses"] }}</p></div>
+    <div><h3>Suggestions</h3><p>{{ r["suggestions"] }}</p></div>
+  </div>
+</section>
+{% endfor %}
+{% endblock %}

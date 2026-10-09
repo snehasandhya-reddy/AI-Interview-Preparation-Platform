@@ -1,0 +1,13 @@
+
+{% extends "base.html" %}
+{% block title %}Profile{% endblock %}
+{% block content %}
+<div class="form-page"><span class="eyebrow">Candidate profile</span><h1>Your profile</h1>
+<form method="post" class="panel form-card">
+<label>Full name</label><input name="name" value="{{ user['name'] }}" required>
+<label>Email</label><input value="{{ user['email'] }}" disabled>
+<label>Target role</label>
+<select name="target_role"><option {% if user['target_role']=='Python Developer' %}selected{% endif %}>Python Developer</option><option {% if user['target_role']=='Data Analyst' %}selected{% endif %}>Data Analyst</option><option {% if user['target_role']=='AI/ML Engineer' %}selected{% endif %}>AI/ML Engineer</option></select>
+<button class="btn primary">Save Changes</button>
+</form></div>
+{% endblock %}

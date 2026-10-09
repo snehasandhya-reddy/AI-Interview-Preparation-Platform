@@ -1,0 +1,26 @@
+
+{% extends "base.html" %}
+{% block title %}New Interview{% endblock %}
+{% block content %}
+<div class="form-page">
+  <span class="eyebrow">Interview setup</span><h1>Configure your mock interview</h1>
+  <p class="muted">Choose a role and difficulty. The platform will select suitable questions.</p>
+  <form method="post" class="panel form-card">
+    <div class="form-grid">
+      <div><label>Target role</label>
+        <select name="role"><option>Python Developer</option><option>Data Analyst</option><option>AI/ML Engineer</option></select>
+      </div>
+      <div><label>Difficulty</label>
+        <select name="difficulty"><option>Beginner</option><option>Intermediate</option><option>Advanced</option></select>
+      </div>
+      <div><label>Interview type</label>
+        <select name="interview_type"><option>Technical</option><option>HR</option></select>
+      </div>
+      <div><label>Number of questions</label>
+        <select name="count"><option>3</option><option selected>5</option><option>7</option><option>10</option></select>
+      </div>
+    </div>
+    <button class="btn primary">Start Interview →</button>
+  </form>
+</div>
+{% endblock %}

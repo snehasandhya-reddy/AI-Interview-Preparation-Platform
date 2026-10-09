@@ -1,0 +1,21 @@
+
+{% extends "base.html" %}
+{% block title %}Register{% endblock %}
+{% block content %}
+<div class="auth-wrap">
+  <div class="auth-card">
+    <span class="eyebrow">Candidate account</span><h1>Create account</h1>
+    <form method="post">
+      <label>Full name</label><input name="name" required>
+      <label>Email</label><input name="email" type="email" required>
+      <label>Target role</label>
+      <select name="target_role">
+        <option>Python Developer</option><option>Data Analyst</option><option>AI/ML Engineer</option>
+      </select>
+      <label>Password</label><input name="password" type="password" minlength="6" required>
+      <button class="btn primary full">Create Account</button>
+    </form>
+    <p class="muted">Already registered? <a href="{{ url_for('login') }}">Login</a></p>
+  </div>
+</div>
+{% endblock %}
